@@ -8,10 +8,12 @@ set JPDA_TRANSPORT=dt_socket
 
 ## **java installation - ubuntu**
 1. download jdk .deb file from oracle site
-1. sudo dpkg -i jdk.deb
-1. edit invironment sudo nano /etc/environment
-   1. /usr/lib/jvm/jdk-11.0.7/bin
-   1. JAVA_HOME="/usr/lib/jvm/jdk-11.0.7"
+1. install
+   1. sudo dpkg -i jdk.deb
+1. edit invironment 
+   1. sudo nano /etc/environment
+      1. /usr/lib/jvm/jdk-11.0.7/bin
+      1. JAVA_HOME="/usr/lib/jvm/jdk-11.0.7"
 1. update alternatives
    1. sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk-11.0.9/bin/java" 0
    1. sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk-11.0.9/bin/javac" 0
